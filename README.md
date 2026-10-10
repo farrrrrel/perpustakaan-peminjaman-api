@@ -155,11 +155,11 @@ Contoh respons dengan status `200 OK`:
       "created_at": "2026-10-10T10:58:36.110735+00:00"
     },
     {
-      "id": "2c32b1ee-20bd-4e78-86c7-a7e90d23e00e",
-      "nama_peminjam": "Sari",
-      "judul_buku": "Basis Data",
+      "id": "ID",
+      "nama_peminjam": "Filbert",
+      "judul_buku": "Anatomi Manusia",
       "tanggal_pinjam": "2026-10-10",
-      "tanggal_jatuh_tempo": "2026-10-05",
+      "tanggal_jatuh_tempo": "2026-10-09",
       "tanggal_kembali": null,
       "status": "Terlambat",
       "created_at": "2026-10-10T10:58:35.547925+00:00"
