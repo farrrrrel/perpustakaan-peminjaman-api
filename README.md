@@ -155,7 +155,7 @@ Contoh respons dengan status `200 OK`:
       "created_at": "2026-10-10T10:58:36.110735+00:00"
     },
     {
-      "id": "ID",
+      "id": "c59e1937-52b1-4756-bb6a-63e79afcf02c",
       "nama_peminjam": "Filbert",
       "judul_buku": "Anatomi Manusia",
       "tanggal_pinjam": "2026-10-10",
