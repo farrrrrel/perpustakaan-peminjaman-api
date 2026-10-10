@@ -119,7 +119,7 @@ Contoh respons dengan status `201 Created`:
   "success": true,
   "message": "Data peminjaman berhasil ditambahkan.",
   "data": {
-    "id": "9f34367c-e978-434f-bb9f-5eb27b86c73c",
+    "id": "2c32b1ee-20bd-4e78-86c7-a7e90d23e00e",
     "nama_peminjam": "Farrel Satya Lukito",
     "judul_buku": "Sore",
     "tanggal_pinjam": "2026-10-10",
@@ -145,7 +145,7 @@ Contoh respons dengan status `200 OK`:
   "count": 2,
   "data": [
     {
-      "id": "9f34367c-e978-434f-bb9f-5eb27b86c73c",
+      "id": "92c32b1ee-20bd-4e78-86c7-a7e90d23e00e",
       "nama_peminjam": "Farrel Satya Lukito",
       "judul_buku": "Sore",
       "tanggal_pinjam": "2026-10-10",
@@ -155,7 +155,7 @@ Contoh respons dengan status `200 OK`:
       "created_at": "2026-10-10T10:58:36.110735+00:00"
     },
     {
-      "id": "676f55ed-32d3-458e-8842-a77e8ffa58ef",
+      "id": "2c32b1ee-20bd-4e78-86c7-a7e90d23e00e",
       "nama_peminjam": "Sari",
       "judul_buku": "Basis Data",
       "tanggal_pinjam": "2026-10-10",
@@ -190,7 +190,7 @@ Contoh respons dengan status `200 OK`:
   "success": true,
   "message": "Data peminjaman berhasil diperbarui.",
   "data": {
-    "id": "9f34367c-e978-434f-bb9f-5eb27b86c73c",
+    "id": "2c32b1ee-20bd-4e78-86c7-a7e90d23e00e",
     "nama_peminjam": "Farrel Satya Lukito",
     "judul_buku": "Sore",
     "tanggal_pinjam": "2026-10-10",
@@ -215,7 +215,7 @@ Contoh respons dengan status `200 OK`:
   "success": true,
   "message": "Data peminjaman berhasil dihapus.",
   "data": {
-    "id": "9f34367c-e978-434f-bb9f-5eb27b86c73c",
+    "id": "2c32b1ee-20bd-4e78-86c7-a7e90d23e00e",
     "nama_peminjam": "Farrel Satya Lukito",
     "judul_buku": "Sore",
     "tanggal_pinjam": "2026-10-10",
