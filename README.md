@@ -17,14 +17,10 @@ API ini menyediakan beberapa fungsi utama, yaitu:
 
 ## Teknologi yang Digunakan
 
-- **Node.js** — lingkungan untuk menjalankan JavaScript di sisi server.
-- **Express.js** — framework untuk membangun endpoint API.
-- **Supabase** — layanan database berbasis PostgreSQL.
-- **JavaScript ES Modules** — sistem modul yang digunakan dalam kode aplikasi.
-
-## Persyaratan Sistem
-
-Sebelum menjalankan aplikasi, pastikan Node.js dan npm telah terpasang pada komputer.
+- **Node.js** : lingkungan untuk menjalankan JavaScript di sisi server.
+- **Express.js** : framework untuk membangun endpoint API.
+- **Supabase** : layanan database berbasis PostgreSQL.
+- **JavaScript ES Modules** : sistem modul yang digunakan dalam kode aplikasi.
 
 ## Instalasi dan Menjalankan Aplikasi
 
@@ -51,12 +47,10 @@ npm install
 Buat file `.env` pada direktori utama proyek, kemudian tambahkan konfigurasi berikut:
 
 ```env
-SUPABASE_URL=URL_PROYEK_SUPABASE
-SUPABASE_KEY=SUPABASE_PUBLISHABLE_KEY
+SUPABASE_URL=https://xyzuzegumbaxyqppuqfd.supabase.co
+SUPABASE_KEY=sb_publishable_Q3F9ZLhnXFjdnUMdVkJJmA_6t-1UeBZ
 PORT=3000
 ```
-
-Sesuaikan nilai URL dan API key dengan konfigurasi proyek Supabase yang digunakan. Pastikan file `.env` tidak ikut diunggah ke repositori publik.
 
 ### 5. Menjalankan server
 
@@ -71,8 +65,6 @@ Perintah tersebut menjalankan server dalam mode pengembangan.
 Buka alamat berikut melalui browser atau aplikasi pengujian API:
 
 `http://localhost:3000`
-
-Jika server berjalan dengan baik, endpoint utama akan memberikan respons dari aplikasi.
 
 ## Daftar Endpoint API
 
@@ -113,9 +105,9 @@ Contoh request body:
 
 ```json
 {
-  "nama_peminjam": "Budi",
-  "judul_buku": "Belajar Node.js",
-  "tanggal_jatuh_tempo": "2026-10-20",
+  "nama_peminjam": "Farrel Satya Lukito",
+  "judul_buku": "Sore",
+  "tanggal_jatuh_tempo": "2026-10-30",
   "status": "Dipinjam"
 }
 ```
@@ -128,10 +120,10 @@ Contoh respons dengan status `201 Created`:
   "message": "Data peminjaman berhasil ditambahkan.",
   "data": {
     "id": "9f34367c-e978-434f-bb9f-5eb27b86c73c",
-    "nama_peminjam": "Budi",
-    "judul_buku": "Belajar Node.js",
+    "nama_peminjam": "Farrel Satya Lukito",
+    "judul_buku": "Sore",
     "tanggal_pinjam": "2026-10-10",
-    "tanggal_jatuh_tempo": "2026-10-20",
+    "tanggal_jatuh_tempo": "2026-10-30",
     "tanggal_kembali": null,
     "status": "Dipinjam",
     "created_at": "2026-10-10T10:58:36.110735+00:00"
@@ -154,10 +146,10 @@ Contoh respons dengan status `200 OK`:
   "data": [
     {
       "id": "9f34367c-e978-434f-bb9f-5eb27b86c73c",
-      "nama_peminjam": "Budi",
-      "judul_buku": "Belajar Node.js",
+      "nama_peminjam": "Farrel Satya Lukito",
+      "judul_buku": "Sore",
       "tanggal_pinjam": "2026-10-10",
-      "tanggal_jatuh_tempo": "2026-10-20",
+      "tanggal_jatuh_tempo": "2026-10-30",
       "tanggal_kembali": null,
       "status": "Dipinjam",
       "created_at": "2026-10-10T10:58:36.110735+00:00"
@@ -199,10 +191,10 @@ Contoh respons dengan status `200 OK`:
   "message": "Data peminjaman berhasil diperbarui.",
   "data": {
     "id": "9f34367c-e978-434f-bb9f-5eb27b86c73c",
-    "nama_peminjam": "Budi",
-    "judul_buku": "Belajar Node.js",
+    "nama_peminjam": "Farrel Satya Lukito",
+    "judul_buku": "Sore",
     "tanggal_pinjam": "2026-10-10",
-    "tanggal_jatuh_tempo": "2026-10-20",
+    "tanggal_jatuh_tempo": "2026-10-30",
     "tanggal_kembali": "2026-10-15",
     "status": "Dikembalikan",
     "created_at": "2026-10-10T10:58:36.110735+00:00"
@@ -224,10 +216,10 @@ Contoh respons dengan status `200 OK`:
   "message": "Data peminjaman berhasil dihapus.",
   "data": {
     "id": "9f34367c-e978-434f-bb9f-5eb27b86c73c",
-    "nama_peminjam": "Budi",
-    "judul_buku": "Belajar Node.js",
+    "nama_peminjam": "Farrel Satya Lukito",
+    "judul_buku": "Sore",
     "tanggal_pinjam": "2026-10-10",
-    "tanggal_jatuh_tempo": "2026-10-20",
+    "tanggal_jatuh_tempo": "2026-10-30",
     "tanggal_kembali": null,
     "status": "Dipinjam",
     "created_at": "2026-10-10T10:58:36.110735+00:00"
@@ -266,7 +258,7 @@ Contoh respons `400 Bad Request`:
 
 ## Struktur Database
 
-Aplikasi menggunakan tabel `loans` pada Supabase yang berbasis PostgreSQL untuk menyimpan informasi peminjaman buku.
+Aplikasi menggunakan tabel `peminjaman` pada Supabase yang berbasis PostgreSQL untuk menyimpan informasi peminjaman buku.
 
 | Kolom | Tipe Data | Nilai Default | Keterangan |
 |---|---|---|---|
