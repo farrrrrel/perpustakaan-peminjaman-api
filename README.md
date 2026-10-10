@@ -31,13 +31,13 @@ Sebelum menjalankan aplikasi, pastikan Node.js dan npm telah terpasang pada komp
 ### 1. Mengunduh repositori
 
 ```bash
-git clone https://github.com/aninlogic/library-loans-api
+git clone https://github.com/farrrrrel/perpustakaan-peminjaman-api
 ```
 
 ### 2. Masuk ke direktori proyek
 
 ```bash
-cd library-loans-api
+cd perpustakaan-peminjaman-api
 ```
 
 ### 3. Memasang dependensi
@@ -285,10 +285,4 @@ Pada proses penambahan data melalui `POST /peminjaman`, field yang wajib diberik
 
 Aplikasi tersedia secara online melalui Vercel pada alamat berikut:
 
-https://library-loans-api-six.vercel.app/
-
-## Catatan Keamanan
-
-API ini dikembangkan untuk keperluan pembelajaran dan pengujian menggunakan data contoh. Saat ini, endpoint belum dilengkapi sistem autentikasi dan otorisasi. Oleh karena itu, pihak yang dapat mengakses API mungkin bisa membaca, menambahkan, memperbarui, atau menghapus data.
-
-Untuk menjaga keamanan, hindari penggunaan data pribadi atau informasi sensitif. Jika aplikasi akan digunakan secara publik, tambahkan mekanisme autentikasi, pembatasan hak akses, serta validasi data yang memadai.
+https://perpustakaan-peminjaman-api.vercel.app/
